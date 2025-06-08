@@ -51,5 +51,16 @@ class LinkedList:
             return
 
         temp.next = temp.next.next
+my_list = LinkedList()
 
+my_list.add_node(10)
+my_list.add_node(20)
+my_list.add_node(30)
+my_list.add_node(40)
 
+print("Original list:")
+my_list.print_list()
+
+my_list.delete_nth_node(3)
+print("After deleting 3rd node:")
+my_list.print_list()
